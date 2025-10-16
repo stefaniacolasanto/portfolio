@@ -1,0 +1,112 @@
+/* General Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Typography */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h2.section-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #555;
+}
+
+p.lead {
+    font-size: 1.15rem;
+    font-weight: 300;
+    color: #6c757d;
+}
+
+/* Navbar */
+.navbar {
+    border-bottom: 1px solid #eee;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: #555;
+    transition: color 0.3s;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #000;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+}
+
+/* Featured Work Section */
+.featured-work {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.project-card {
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.project-card .card-body {
+    padding: 1.25rem;
+}
+
+.project-card .card-title {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/* Footer */
+footer {
+    background-color: #fff;
+    border-top: 1px solid #eee;
+}
+
+footer p {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.social-icon {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0 8px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #000;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    .hero-section {
+        padding: 60px 0;
+    }
+}
