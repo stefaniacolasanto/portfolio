@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,41 +8,45 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
-        <div class="container my-2">
-            <a class="navbar-brand" href="#">Stefania Colasanto</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="profile.jpg" alt="User" class="rounded-circle"> Stefania Colasanto</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link active" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Progetti</a>
+                        <a class="nav-link" href="#projects">Progetti</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Profilo</a>
+                        <a class="nav-link" href="#profile">Profilo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contatti</a>
+                        <a class="nav-link" href="#contacts">Contatti</a>
                     </li>
                     <li class="nav-item ms-lg-3">
-                        <img src="profile.jpg" alt="User" class="rounded-circle">
+                        
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header class="hero-section text-center">
+    <header class="hero-section text-center" id="home">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -52,32 +57,77 @@
         </div>
     </header>
 
-    <section class="featured-work py-5">
+    <section class="featured-work py-5" id="projects">
         <div class="container">
-            <h2 class="section-title mb-5">Progetti</h2>
+            <h2 class="mb-5 text-center"><strong>Progetti</strong></h2>
             <div class="row g-4">
+                <div class="col-md-6 col-lg-4"></div>
                 <div class="col-md-6 col-lg-4">
                     <div class="card project-card">
-                        <img src="https://i.imgur.com/uG2G9jL.png" class="card-img-top" alt="SkillBridge App">
-                        <div class="card-body">
-                            <h5 class="card-title">SkillBridge: Mentership App</h5>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Evergreen Kids App</h5>
                         </div>
+                        <img src="app.gif" height="600" class="card-img-top" alt="app">
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card project-card">
-                        <img src="https://i.imgur.com/7bA1n1G.png" class="card-img-top" alt="EcoPlate">
-                        <div class="card-body">
-                            <h5 class="card-title">EcoPlate: Sustainable Eating</h5>
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Evergreen Kids Desktop</h5>
                         </div>
+                        <img src="desktop.gif" height="700" class="card-img-top" alt="desktop">
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card project-card">
-                        <img src="https://i.imgur.com/bWvL3gE.png" class="card-img-top" alt="MedMind">
-                        <div class="card-body">
-                            <h5 class="card-title">MedMind: Mental Wellness</h5>
-                        </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-work py-5" id="profile">
+        <div class="container">
+            <h2 class="mb-5 text-center"><strong>Profilo</strong></h2>
+            <p>Parlo di me</p>
+            <div class="row">
+                <div class="col-md-7">
+                    <img src="certification.png" height="500" class="card-img-top" alt="certification">
+                </div>
+                <div class="col-md-4">
+                    <img src="badge.png" height="500" class="card-img-top" alt="badge">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="featured-work py-5" id="contacts">
+        <div class="container">
+            <h2 class="mb-5 text-center"><strong>Contatti</strong></h2>
+            <div class="container mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <form id="contactForm">
+
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Oggetto</label>
+                                <input type="text" class="form-control" id="subject"
+                                    placeholder="Inserisci l'oggetto del messaggio" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="body" class="form-label">Corpo del Messaggio</label>
+                                <textarea class="form-control" id="body" rows="5"
+                                    placeholder="Scrivi qui il tuo messaggio..." required></textarea>
+                            </div>
+
+                            <button type="button" class="btn btn-primary" onclick="sendMail()">
+                                Invia Messaggio
+                            </button>
+
+                        </form>
                     </div>
                 </div>
             </div>
@@ -87,10 +137,29 @@
     <footer class="text-center py-4">
         <div class="container">
             <p class="mb-2">© 2025 Stefania Colasanto UX Designer. All rights reserved.</p>
-            <a href="https://www.linkedin.com/in/stefania-colasanto-ab1929173/" class="social-icon"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/stefania-colasanto-ab1929173/" class="social-icon"><i
+                    class="bi bi-linkedin"></i></a>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function sendMail() {
+            // 1. Ottieni i valori dai campi
+            const subject = document.getElementById('subject').value;
+            const body = document.getElementById('body').value;
+
+            // 2. Codifica i valori per l'URL (importante per spazi e caratteri speciali)
+            const encodedSubject = encodeURIComponent(subject);
+            const encodedBody = encodeURIComponent(body);
+
+            // 3. Crea il link mailto completo
+            const mailtoLink = `mailto:stecolasanto@gmail.com?subject=${encodedSubject}&body=${encodedBody}`;
+
+            // 4. Reindirizza l'utente al link mailto
+            window.location.href = mailtoLink;
+        }
+    </script>
 </body>
+
 </html>
